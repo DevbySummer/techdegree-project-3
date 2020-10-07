@@ -9,15 +9,51 @@
     </head>
     <body>
         <header class="main-header">
-            <div class="container">
+            <!-- <div class="container"> -->
                 <h1 class="name">The Code Review</h1>
-                <h2 class="banner">Signup for our newsletter</h2>
-                <p class="banner-paragraph">Get the latest news on how your code is doing right in your inbox</p>
+            <div class="container"> 
+                <h2 class="sub-heading">Signup for our newsletter</h2>
+                <p class="sub-heading-paragraph">Get the latest news on how your code is doing right in your inbox</p>
+                <hr>
             </div>
         </header>
 
         <main>
+            <div class="container">
+                <h3>Contact Information</h3>
+                <form>
+                    <fieldset>
+                        <legend>Contact</legend>
+                    <label class="label-position" for="text">Full Name</label>
+                    <input type="text" id="text" name="user-name">
 
+                    <label class="label-position" for="email">Email Address</label>
+                    <input type="email" id="email" name="user-email">
+
+                    <label class="label-position" for="number">Phone Number</label>
+                    <input type="phone" id="number" name="user-number">
+
+                    <label class="label-position" for="address">Street Address</label>
+                    <input type="address" id="address" name="user-address">
+
+                    <label class="label-position">City</label>
+                    <input type="text" id="city" name="user-city">
+                    
+                    <label class="label-position" for="state">State</label>
+                    <select id="state" name="user-state">
+                        <option value="">Choose State</option>
+                        <option value="new-york">New York</option>
+                        <option value="california">California</option>
+                        <option value="florida">Florida</option>
+                    </select>
+
+                    <label class="label-position">Zip Code</label>
+                    <input type="number" id="zipcode" name="user-zipcode">
+
+                    <hr>
+                    </fieldset>
+                </form>
+            </div>
         </main>
 
         <footer>
