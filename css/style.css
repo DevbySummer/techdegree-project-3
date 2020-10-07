@@ -22,22 +22,16 @@ h1
     margin-top: 0;
     font-size: 22px;
     color: #fff;
-    font-weight: 400;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
 h2
 {
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 700;
     word-spacing: 1.2px;
-    color: rgb(38, 38, 38);
-}
-
-h3 /* title for form */
-{
-    text-align: left;
-    color: rgb(38, 38, 38);
+    color: rgb(58, 58, 58);
 }
 
 fieldset /* organizes deferent parts of form */
@@ -48,9 +42,25 @@ fieldset /* organizes deferent parts of form */
     padding-right: 0;
 }
 
+legend /* titles to each section of form */
+{
+    color: rgb(58, 58, 58);
+    font-size: 19px;
+    font-weight: 700;
+}
+
 input
 {
     display: block;
+    width: 100%;
+    background: rgb(237, 236, 236);
+    border: none;
+    height: 40px;
+}
+
+form hr
+{
+    margin-top: 35px;
 }
 
 /* ================================= 
@@ -102,8 +112,6 @@ input
     padding-bottom: 10px;
     padding-top: 10px;
 }
-
-
 
 /* ================================= 
   Media Queries 768px
