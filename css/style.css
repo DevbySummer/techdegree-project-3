@@ -132,6 +132,7 @@ textarea
     height: 80px;
     border-radius: 3px;
     margin-bottom: 30px;
+    margin-top: 5px;
 }
 
 .btn
@@ -150,15 +151,20 @@ textarea
     font-weight: 400;
 }
 
-input[type="checkbox"],
-input[type="radio"]
-{
-    justify-content: left;
-}
-
 fieldset:last-of-type label
 {
     display: inline-block;
+    margin-left: 15px;
+}
+
+fieldset:last-of-type p
+{
+    padding-bottom: 15px;
+}
+
+.last-para
+{
+    padding-top: 15px;
 }
 
 form hr
@@ -185,5 +191,35 @@ footer p
 
 @media (min-width: 768px)
 {
+    .container
+    {
+        max-width: 500px;
+        margin: auto;
+    }
 
+    .flex-fieldset /* first Fieldset of form */
+    {
+        display: flex;
+    }
+
+    .flex-fieldset label
+    {
+        color: rgb(128, 128, 128);
+        display: flex;
+        flex: 1;
+        justify-content: flex-start;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="phone"],
+    input[type="address"],
+    input[type="number"],
+    select
+    {
+        display: flex;
+        flex: 1;
+        width: 60%;
+        justify-content: flex-end;
+    }
 }
