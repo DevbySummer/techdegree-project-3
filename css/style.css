@@ -34,35 +34,6 @@ h2
     color: rgb(58, 58, 58);
 }
 
-fieldset /* organizes deferent parts of form */
-{
-    border: none;
-    text-align: left;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-legend /* titles to each section of form */
-{
-    color: rgb(58, 58, 58);
-    font-size: 19px;
-    font-weight: 700;
-}
-
-input
-{
-    display: block;
-    width: 100%;
-    background: rgb(237, 236, 236);
-    border: none;
-    height: 40px;
-}
-
-form hr
-{
-    margin-top: 35px;
-}
-
 /* ================================= 
   Base Layout Styles
 ==================================== */
@@ -104,13 +75,46 @@ form hr
     margin: auto;
 }
 
-/* ---- Page Elements Main---- */
+/* ---- Form---- */
 
-.label-position /* positions labels above inputs */
+fieldset /* organizes deferent parts of form */
+{
+    border: none;
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+legend /* titles to each section of form */
+{
+    color: rgb(58, 58, 58);
+    font-size: 19px;
+    font-weight: 700;
+}
+
+label
+{
+    color: rgb(128, 128, 128);
+    padding-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+input[type="address"],
+input[type="number"],
+select
 {
     display: block;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    width: 100%;
+    background: rgb(237, 236, 236);
+    border: none;
+    height: 40px;
+}
+
+form hr
+{
+    margin-top: 35px;
 }
 
 /* ================================= 
