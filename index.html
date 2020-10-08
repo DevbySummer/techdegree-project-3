@@ -23,32 +23,39 @@
                 <form action="index.html" method="POST">
                     <fieldset class="flex-fieldset">
                         <legend>Contact Information</legend>
-                        <label for="text">Full Name</label>
-                        <input type="text" id="text" name="user-name" placeholder="required">
-
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="user-email" placeholder="required">
-
-                        <label for="number">Phone Number</label>
-                        <input type="phone" id="number" name="user-number">
-
-                        <label for="address">Street Address</label>
-                        <input type="address" id="address" name="user-address">
-
-                        <label for="city">City</label>
-                        <input type="text" id="city" name="user-city">
-                        
-                        <label for="state">State</label>
-                        <select id="state" name="user-state">
-                            <option value="">Choose State</option>
-                            <option value="new-york">New York</option>
-                            <option value="california">California</option>
-                            <option value="florida">Florida</option>
-                        </select>
-
-                        <label>Zip Code</label>
-                        <input type="number" id="zipcode" name="user-zipcode">
-
+                        <div class="flex">
+                            <label for="text">Full Name</label>
+                            <input type="text" id="text" name="user-name" placeholder="required">
+                        </div>
+                        <div class="flex">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="user-email" placeholder="required">
+                        </div>
+                        <div class="flex">
+                            <label for="number">Phone Number</label>
+                            <input type="phone" id="number" name="user-number">
+                        </div>
+                        <div class="flex">
+                            <label for="address">Street Address</label>
+                            <input type="address" id="address" name="user-address">
+                        </div>
+                        <div class="flex">
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="user-city">
+                        </div>
+                        <div class="flex">
+                            <label for="state">State</label>
+                            <select id="state" name="user-state">
+                                <option value="">Choose State</option>
+                                <option value="new-york">New York</option>
+                                <option value="california">California</option>
+                                <option value="florida">Florida</option>
+                            </select>
+                        </div>
+                        <div class="flex zip-code">
+                            <label>Zip Code</label>
+                            <input type="number" id="zipcode" name="user-zipcode">
+                        </div>
                         <hr>
                     </fieldset>
 
@@ -66,7 +73,7 @@
 
                         <input type="radio" id="newsletter-plain-radio" value="newsletter-plain-text" name="newsletter-format"><label for="newsletter-plain-radio"> Plain text</label><br>
 
-                        <label for="topics">Other topics you'd like to hear about</label>
+                        <label class="text-area" for="topics" >Other topics you'd like to hear about</label>
                         <textarea id="topics"name="user-topics"></textarea>
 
                         <input type="submit" class="btn btn-submit">

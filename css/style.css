@@ -202,14 +202,21 @@ footer p
         display: flex;
     }
 
+    .flex
+    {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+
     .flex-fieldset label
     {
-        color: rgb(128, 128, 128);
-        display: flex;
+        
         flex: 1;
         justify-content: flex-start;
-        display: inline-block;
+        color: rgb(128, 128, 128);
         width: 120px;
+
     }
     
     input[type="text"],
@@ -219,8 +226,17 @@ footer p
     input[type="number"],
     select
     {
-        display: flex;
         justify-content: flex-end;
-        flex: 1;
+        flex: 2;
+    }
+
+    .flex-fieldset .flex .zip-code
+    {
+        flex: .5;
+    }
+
+    fieldset:last-of-type .text-area
+    {
+        margin-left: 0;
     }
 }
