@@ -21,41 +21,56 @@
         <main>
             <div class="container">
                 <!-- <h3>Contact Information</h3> -->
-                <form>
+                <form action="index.html" method="POST">
                     <fieldset>
                         <legend>Contact Information</legend>
-                    <label class="label-position" for="text">Full Name</label>
-                    <input type="text" id="text" name="user-name">
+                        <label class="label-position" for="text">Full Name</label>
+                        <input type="text" id="text" name="user-name">
 
-                    <label class="label-position" for="email">Email Address</label>
-                    <input type="email" id="email" name="user-email">
+                        <label class="label-position" for="email">Email Address</label>
+                        <input type="email" id="email" name="user-email">
 
-                    <label class="label-position" for="number">Phone Number</label>
-                    <input type="phone" id="number" name="user-number">
+                        <label class="label-position" for="number">Phone Number</label>
+                        <input type="phone" id="number" name="user-number">
 
-                    <label class="label-position" for="address">Street Address</label>
-                    <input type="address" id="address" name="user-address">
+                        <label class="label-position" for="address">Street Address</label>
+                        <input type="address" id="address" name="user-address">
 
-                    <label class="label-position">City</label>
-                    <input type="text" id="city" name="user-city">
-                    
-                    <label class="label-position" for="state">State</label>
-                    <select id="state" name="user-state">
-                        <option value="">Choose State</option>
-                        <option value="new-york">New York</option>
-                        <option value="california">California</option>
-                        <option value="florida">Florida</option>
-                    </select>
+                        <label class="label-position">City</label>
+                        <input type="text" id="city" name="user-city">
+                        
+                        <label class="label-position" for="state">State</label>
+                        <select id="state" name="user-state">
+                            <option value="">Choose State</option>
+                            <option value="new-york">New York</option>
+                            <option value="california">California</option>
+                            <option value="florida">Florida</option>
+                        </select>
 
-                    <label class="label-position">Zip Code</label>
-                    <input type="number" id="zipcode" name="user-zipcode">
+                        <label class="label-position">Zip Code</label>
+                        <input type="number" id="zipcode" name="user-zipcode">
 
-                    <hr>
+                        <hr>
                     </fieldset>
 
                     <fieldset>
                         <legend>Newsletter</legend>
-                        <p>Select the newsletters you would like to recieve</p>
+                        <label class="label-position">Select the newsletters you would like to recieve</label>
+                        <input type="checkbox" id="newsletter-checkbox" value="newsletter-html-news" name="newsletter-news"><label for="newsletter-checkbox"> HTML News</label>
+
+                        <input type="checkbox" id="newsletter-checkbox" value="newsletter-css-news" name="newsletter-news"><label for="newsletter-checkbox"> CSS News</label>
+
+                        <input type="checkbox" id="newsletter-checkbox" value="newsletter-javascript-news" name="newsletter-news"><label for="newsletter-checkbox"> Javacript News</label>
+
+                        <label class="label-position">Newsletter format</label>
+                        <input type="radio" id="newsletter-radio" value="newsletter-html" name="newsletter-format"><label for="newsletter-radio"> HTML</label>
+
+                        <input type="radio" id="newsletter-radio" value="newsletter-plain-text" name="newsletter-format"><label for="newsletter-radio"> Plain text</label>
+
+                        <label for="topics">Other topics you'd like to hear about</label>
+                        <textarea id="topics"name="user-topics"></textarea>
+
+                        <input type="submit">
                     </fieldset>
                 </form>
             </div>
