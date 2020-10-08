@@ -230,9 +230,15 @@ footer p
         flex: 2;
     }
 
-    .flex-fieldset .flex .zip-code
+    /* .flex label
+    {
+        width: 120px;
+    } */
+
+    .zip-code
     {
         flex: .5;
+        align-self;: left;
     }
 
     fieldset:last-of-type .text-area
