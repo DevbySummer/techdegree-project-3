@@ -20,15 +20,14 @@
 
         <main>
             <div class="container">
-                <!-- <h3>Contact Information</h3> -->
                 <form action="index.html" method="POST">
                     <fieldset>
                         <legend>Contact Information</legend>
                         <label for="text">Full Name</label>
-                        <input type="text" id="text" name="user-name">
+                        <input type="text" id="text" name="user-name" placeholder="required">
 
                         <label for="email">Email Address</label>
-                        <input type="email" id="email" name="user-email">
+                        <input type="email" id="email" name="user-email" placeholder="required">
 
                         <label for="number">Phone Number</label>
                         <input type="phone" id="number" name="user-number">
@@ -55,17 +54,17 @@
 
                     <fieldset>
                         <legend>Newsletter</legend>
-                        <label class="label-position">Select the newsletters you would like to recieve</label>
-                        <input type="checkbox" id="newsletter-html-checkbox" value="newsletter-html-news" name="newsletter-news"><label for="newsletter-html-checkbox"> HTML News</label>
+                        <p>Select the newsletters you would like to recieve</p>
+                        <input type="checkbox" id="newsletter-html-checkbox" value="newsletter-html-news" name="newsletter-news"><label for="newsletter-html-checkbox"> HTML News</label><br>
 
-                        <input type="checkbox" id="newsletter-css-checkbox" value="newsletter-css-news" name="newsletter-news"><label for="newsletter-css-checkbox"> CSS News</label>
+                        <input type="checkbox" id="newsletter-css-checkbox" value="newsletter-css-news" name="newsletter-news"><label for="newsletter-css-checkbox"> CSS News</label><br>
 
-                        <input type="checkbox" id="newsletter-javascript-checkbox" value="newsletter-javascript-news" name="newsletter-news"><label for="newsletter-javascript-checkbox"> Javacript News</label>
+                        <input type="checkbox" id="newsletter-javascript-checkbox" value="newsletter-javascript-news" name="newsletter-news"><label for="newsletter-javascript-checkbox"> Javacript News</label><br>
 
-                        <label class="label-position">Newsletter format</label>
-                        <input type="radio" id="newsletter-html-radio" value="newsletter-html" name="newsletter-format"><label for="newsletter-html-radio"> HTML</label>
+                        <p>Newsletter format</p>
+                        <input type="radio" id="newsletter-html-radio" value="newsletter-html" name="newsletter-format"><label for="newsletter-html-radio"> HTML</label><br>
 
-                        <input type="radio" id="newsletter-plain-radio" value="newsletter-plain-text" name="newsletter-format"><label for="newsletter-plain-radio"> Plain text</label>
+                        <input type="radio" id="newsletter-plain-radio" value="newsletter-plain-text" name="newsletter-format"><label for="newsletter-plain-radio"> Plain text</label><br>
 
                         <label for="topics">Other topics you'd like to hear about</label>
                         <textarea id="topics"name="user-topics"></textarea>

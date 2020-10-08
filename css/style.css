@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 /* ================================= 
   Base Element Styles
 ==================================== */
@@ -65,6 +64,7 @@ h2
     width: 95%;
     margin: auto;
     margin-bottom: 35px;
+    word-spacing: 1.2px;
 }
 
 /* ---- Layout Containers ---- */
@@ -91,7 +91,7 @@ legend /* titles to each section of form */
     font-size: 19px;
     font-weight: 700;
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
 }
 
 label
@@ -115,6 +115,12 @@ select
     border: none;
     height: 40px;
     border-radius: 3px;
+}
+
+input[type="placeholder"],
+{
+    color: rgb(128, 128, 128);
+    text-align: right;
 }
 
 textarea
@@ -150,16 +156,10 @@ input[type="radio"]
     justify-content: left;
 }
 
-fieldset:last-of-type
+fieldset:last-of-type label
 {
-    display: flex;
+    display: inline-block;
 }
-
-fieldset label:last-of-type
-{
-    justify-content: left;
-}
-
 
 form hr
 {
@@ -182,3 +182,8 @@ footer p
 /* ================================= 
   Media Queries 768px
 ==================================== */
+
+@media (min-width: 768px)
+{
+
+}
