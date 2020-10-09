@@ -33,6 +33,22 @@ h2
     color: rgb(58, 58, 58);
 }
 
+.line-break-1
+{
+    margin-bottom: 3px;
+    border-top: 3px solid black;
+}
+
+.line-break-2
+{
+    border-top: 1px solid black;
+}
+
+.line-break-3
+{
+    border-top: 1px solid black;
+}
+
 /* ================================= 
   Base Layout Styles
 ==================================== */
@@ -104,8 +120,7 @@ label
 
 input[type="text"],
 input[type="email"],
-input[type="phone"],
-input[type="address"],
+input[type="tel"],
 input[type="number"],
 select
 {
@@ -115,6 +130,11 @@ select
     border: none;
     height: 40px;
     border-radius: 3px;
+}
+
+input::placeholder /* moves placeholder to the right side of input */
+{
+    text-align: right;
 }
 
 #zipcode
@@ -165,6 +185,11 @@ fieldset:last-of-type p  /* targets both paragraphs in last fieldset */
 .last-para  /* "Newsletter Format" */
 {
     padding-top: 15px;
+}
+
+fieldset:last-of-type .text-area /* moves last paragraph to left side */
+{
+    margin-left: 0;
 }
 
 form hr  /* second border */
@@ -218,7 +243,7 @@ footer p
     
     input[type="text"],
     input[type="email"],
-    input[type="phone"],
+    input[type="tel"],
     input[type="address"],
     input[type="number"],
     select

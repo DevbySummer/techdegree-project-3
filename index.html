@@ -14,7 +14,8 @@
             <div class="container"> 
                 <h2 class="sub-heading">Signup for our newsletter</h2>
                 <p class="sub-heading-paragraph">Get the latest news on how your code is doing right in your inbox</p>
-                <hr>
+                <hr class="line-break-1">
+                <hr class="line-break-2">
             </div>
         </header>
 
@@ -33,11 +34,11 @@
                         </div>
                         <div class="flex">
                             <label for="number">Phone Number</label>
-                            <input type="phone" id="number" name="user-number">
+                            <input type="tel" id="number" name="user-number">
                         </div>
                         <div class="flex">
                             <label for="address">Street Address</label>
-                            <input type="address" id="address" name="user-address">
+                            <input type="text" id="address" name="user-address">
                         </div>
                         <div class="flex">
                             <label for="city">City</label>
@@ -58,7 +59,7 @@
                                 <input type="number" id="zipcode" name="user-zipcode">
                             </div>
                         </div>
-                        <hr>
+                        <hr class="line-break-3">
                     </fieldset>
 
                     <fieldset>
@@ -75,7 +76,7 @@
 
                         <input type="radio" id="newsletter-plain-radio" value="newsletter-plain-text" name="newsletter-format"><label for="newsletter-plain-radio"> Plain text</label><br>
 
-                        <label class="text-area" for="topics" >Other topics you'd like to hear about</label>
+                        <label class="text-area" for="topics">Other topics you'd like to hear about</label>
                         <textarea id="topics" name="user-topics"></textarea>
 
                         <input type="submit" class="btn btn-submit">
