@@ -117,12 +117,6 @@ select
     border-radius: 3px;
 }
 
-input[type="placeholder"],
-{
-    color: rgb(128, 128, 128);
-    text-align: right;
-}
-
 textarea
 {
     display: block;
@@ -210,7 +204,7 @@ footer p
     }
 
     .flex-fieldset label  /* labels in first Fieldset */
-        
+    {    
         flex: 1;
         justify-content: flex-start;
         color: rgb(128, 128, 128);
