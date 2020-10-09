@@ -117,7 +117,7 @@ select
     border-radius: 3px;
 }
 
-input[type="number"] .zip-code
+#zipcode
 {
     width: 50%;
 }
@@ -141,6 +141,7 @@ textarea
     border: 0;
     font-size: 20px;
     letter-spacing: 1.1px;
+    border-radius: 3px;
 }
 
 .btn-submit
@@ -223,13 +224,13 @@ footer p
     select
     {
         justify-content: flex-end;
-        flex: 70%;
+        flex-basis: 70%;
         flex-grow: 1;
     }
 
-    input[type="number"] .zip-code /* Trying to target the Zipcode Input and move to the left */
+    #zipcode
     {
-        flex: .5;
+        width: 100%;
     }
 
     fieldset:last-of-type .text-area
